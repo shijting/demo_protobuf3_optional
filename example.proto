@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package demo_protobuf3_optional;
+
+option go_package = "github.com/shijting/demo-protobuf3-optional";
+
+message WithOptional {
+  string username = 1;
+  optional int64 userid = 2;
+}
+
+message WithOneof {
+  string username = 1;
+  oneof optional_userid {
+    int64 userid = 2;
+  }
+}
