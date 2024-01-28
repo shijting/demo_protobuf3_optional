@@ -10,6 +10,6 @@
 - map 基本语法：map<KeyType, ValueType> 。PS：map 的 key 必须是基本类型，而且必须是唯一的。
 - enum：枚举类型。
 - repeated：重复的，即数组。
-- oneof：一组备选字段，最多只能有一个生效。
+- oneof：一组备选字段，最多只能有一个生效。标记接口，没有实际意义
 - any：任意类型，可以用来做扩展。
-- oneof 和 any 是 Protobuf 3.0 新增的两个特性。
+- optional：可选的，表示该字段可以不存在，但是如果存在，必须满足定义的类型。指针类型
